@@ -119,13 +119,13 @@ export const education = [
   {
     kind: "Qualification",
     title: "Short-Term Insurance Qualification, NQF Level 4",
-    meta: "GIFS through Santam · Completed February 2022",
+    meta: "GIFS through Santam · March 2022 — March 2023",
     location: "Sandton, GP",
   },
   {
     kind: "Certificate",
     title: "National Certificate (Vocational): Office Administration, Level 3",
-    meta: "Maluti TVET College · Completed November 2021",
+    meta: "Maluti TVET College · February 2019 — November 2021",
     location: "Harrismith, FS",
   },
 ];
