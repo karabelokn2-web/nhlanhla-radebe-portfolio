@@ -102,6 +102,11 @@ export function Experience() {
                 </span>
               </div>
               <p className="mt-1 text-sm font-medium text-primary">{job.company}</p>
+              {job.location ? (
+                <p className="mt-0.5 font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
+                  {job.location}
+                </p>
+              ) : null}
               <ul className="mt-3 space-y-1.5 text-sm leading-relaxed text-muted-foreground">
                 {job.points.map((point) => (
                   <li key={point} className="flex gap-2">
@@ -170,6 +175,11 @@ export function Education() {
               {item.title}
             </h3>
             <p className="mt-1 text-sm text-muted-foreground">{item.meta}</p>
+            {item.location ? (
+              <p className="mt-0.5 font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
+                {item.location}
+              </p>
+            ) : null}
           </div>
         ))}
       </div>

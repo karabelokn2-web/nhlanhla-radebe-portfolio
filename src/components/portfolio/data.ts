@@ -58,8 +58,9 @@ export const skillGroups = [
 
 export const experience = [
   {
-    role: "Assessor Support Officer",
+    role: "Assessing Support Officer",
     company: "Telesure Investment Holdings (Auto & General)",
+    location: "Midrand, GP",
     period: "April 2024 — March 2026",
     points: [
       "Supported customers and internal stakeholders in a high-volume claims environment.",
@@ -75,6 +76,7 @@ export const experience = [
   {
     role: "Claims Consultant",
     company: "Brolink (Pty) Ltd",
+    location: "Centurion, GP",
     period: "March 2022 — March 2024",
     points: [
       "Registered and processed personal and commercial motor insurance claims.",
@@ -118,11 +120,13 @@ export const education = [
     kind: "Qualification",
     title: "Short-Term Insurance Qualification, NQF Level 4",
     meta: "GIFS through Santam · Completed February 2022",
+    location: "Sandton, GP",
   },
   {
     kind: "Certificate",
     title: "National Certificate (Vocational): Office Administration, Level 3",
     meta: "Maluti TVET College · Completed November 2021",
+    location: "Harrismith, FS",
   },
 ];
 
