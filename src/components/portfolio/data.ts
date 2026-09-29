@@ -16,7 +16,7 @@ export const profile = {
   phoneHref: "tel:+27670226600",
   linkedin: "https://www.linkedin.com/in/nhlanhla-radebe-346652199",
   github: "https://github.com/karabelokn2-web",
-  cvUrl: "/Nhlanhla-Radebe-CV.pdf",
+  cvUrl: cvAsset.url,
 };
 
 export const skillGroups = [
