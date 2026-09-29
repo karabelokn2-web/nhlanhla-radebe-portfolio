@@ -87,6 +87,11 @@
     scroll-behavior: smooth;
   }
 
+  section[id],
+  main[id] {
+    scroll-margin-top: 4.5rem;
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
