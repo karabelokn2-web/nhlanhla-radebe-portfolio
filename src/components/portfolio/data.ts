@@ -1,3 +1,5 @@
+import cvAsset from "@/assets/Nhlanhla-Radebe-CV.pdf.asset.json";
+
 export const profile = {
   name: "Nhlanhla Radebe",
   initials: "NR",
