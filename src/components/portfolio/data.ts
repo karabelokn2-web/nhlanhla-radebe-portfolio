@@ -1,4 +1,5 @@
 import cvAsset from "@/assets/Nhlanhla-Radebe-CV.pdf.asset.json";
+import photoAsset from "@/assets/Nhlanhla-Radebe-Profile.jpg.asset.json";
 
 export const profile = {
   name: "Nhlanhla Radebe",
@@ -17,6 +18,8 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/nhlanhla-radebe-346652199",
   github: "https://github.com/karabelokn2-web",
   cvUrl: cvAsset.url,
+  photoUrl: photoAsset.url,
+  photoAlt: "Nhlanhla Radebe - Short-Term Insurance Professional",
 };
 
 export const skillGroups = [
