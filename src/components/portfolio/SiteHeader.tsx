@@ -75,9 +75,13 @@ export function SiteHeader() {
         <div className="mx-auto w-full max-w-3xl px-5 py-3 sm:flex sm:items-center sm:justify-between">
           <div className="flex min-w-0 items-center justify-between">
             <a href="#top" className="flex shrink-0 items-center gap-2.5" aria-label="Back to top">
-              <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-foreground font-display text-sm font-semibold text-background">
-                {profile.initials}
-              </span>
+              <img
+                src={profile.photoUrl}
+                alt={profile.photoAlt}
+                width={36}
+                height={36}
+                className="size-9 shrink-0 rounded-lg border border-border object-cover object-top shadow-sm"
+              />
               <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
                 Radebe
               </span>
