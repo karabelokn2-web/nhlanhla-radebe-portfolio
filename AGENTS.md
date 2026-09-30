@@ -13,4 +13,5 @@
 
 - Portfolio content lives in `src/components/portfolio/data.ts`; section markup lives in `src/components/portfolio/Sections.tsx`. Keep profile, experience, projects, education and leadership facts in `data.ts` rather than hardcoding them into components.
 - The CV PDF is served from the Lovable CDN via `src/assets/Nhlanhla-Radebe-CV.pdf.asset.json`; `profile.cvUrl` reads that pointer's `url` and both Download CV anchors use it. Keep the binary out of `public/` — when the CV is replaced, re-create the pointer with `lovable-assets create` and delete the superseded asset.
+- The profile photo is a bundled asset: the real JPEG lives at `src/assets/Nhlanhla-Radebe-Profile.jpg` and `data.ts` imports it directly (`profile.photoUrl`), so Vite emits a hashed production URL. Do NOT switch it back to a Lovable CDN `.asset.json` pointer — those `/__l5e/...` URLs 404 on external deploys (e.g. Vercel). Same rule applies to any image that must work off-Lovable.
 - Nhlanhla is a Short-Term Insurance / Claims / Customer Support professional, not a software developer. Never add developer-positioned headlines, and keep web skills tied to the portfolio projects.
