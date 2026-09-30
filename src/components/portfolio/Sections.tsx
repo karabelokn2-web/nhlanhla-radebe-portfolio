@@ -8,12 +8,24 @@ export function Hero() {
     <section className="rise pt-14 pb-10">
       <div className="grid items-center gap-8 md:grid-cols-[minmax(0,1fr)_17rem] md:gap-10">
         <div className="order-2 min-w-0 md:order-1">
-          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-primary">
-            {profile.subheading}
-          </p>
-          <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
-            {profile.location}
-          </p>
+          <div className="flex items-center gap-4">
+            <img
+              src={profile.photoUrl}
+              alt=""
+              aria-hidden="true"
+              width={1280}
+              height={1920}
+              className="size-16 shrink-0 rounded-2xl border border-border object-cover object-top shadow-sm"
+            />
+            <div className="min-w-0">
+              <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-primary">
+                {profile.subheading}
+              </p>
+              <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
+                {profile.location}
+              </p>
+            </div>
+          </div>
           <h1 className="mt-6 text-balance font-display text-[2.6rem] leading-[1.02] tracking-tight sm:text-6xl">
             {profile.name}
           </h1>
