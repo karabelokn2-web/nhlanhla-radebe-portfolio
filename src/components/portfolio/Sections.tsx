@@ -6,62 +6,43 @@ const panel = "rounded-2xl border border-border bg-panel p-5 backdrop-blur-xl";
 export function Hero() {
   return (
     <section className="rise pt-14 pb-10">
-      <div className="grid items-center gap-8 md:grid-cols-[minmax(0,1fr)_17rem] md:gap-10">
-        <div className="order-2 min-w-0 md:order-1">
-          <div className="flex items-center gap-4">
-            <img
-              src={profile.photoUrl}
-              alt=""
-              aria-hidden="true"
-              width={1280}
-              height={1920}
-              className="size-16 shrink-0 rounded-2xl border border-border object-cover object-top shadow-sm"
-            />
-            <div className="min-w-0">
-              <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-primary">
-                {profile.subheading}
-              </p>
-              <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
-                {profile.location}
-              </p>
-            </div>
-          </div>
-          <h1 className="mt-6 text-balance font-display text-[2.6rem] leading-[1.02] tracking-tight sm:text-6xl">
-            {profile.name}
-          </h1>
-          <p className="mt-4 max-w-[46ch] text-pretty text-[15px] leading-relaxed text-muted-foreground sm:text-base">
-            {profile.intro}
+      <div className="flex items-center gap-4">
+        <img
+          src={profile.photoUrl}
+          alt={profile.photoAlt}
+          width={1280}
+          height={1920}
+          className="size-16 shrink-0 rounded-2xl border border-border object-cover object-top shadow-sm"
+        />
+        <div className="min-w-0">
+          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-primary">
+            {profile.subheading}
           </p>
-          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-            <a
-              href="#experience"
-              className="flex items-center justify-center rounded-xl bg-foreground px-5 py-3.5 text-sm font-semibold text-background transition-transform duration-200 hover:-translate-y-0.5"
-            >
-              View My Experience
-            </a>
-            <a
-              href={profile.cvUrl}
-              download
-              className="flex items-center justify-center rounded-xl border border-border bg-panel px-5 py-3.5 text-sm font-semibold text-foreground backdrop-blur-md transition-transform duration-200 hover:-translate-y-0.5"
-            >
-              Download CV
-            </a>
-          </div>
+          <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
+            {profile.location}
+          </p>
         </div>
-
-        <div className="order-1 w-full max-w-[15rem] justify-self-center md:order-2 md:w-full md:max-w-none">
-          <div className="rounded-[1.75rem] border border-border bg-panel-strong p-2 shadow-lg backdrop-blur-xl">
-            <div className="overflow-hidden rounded-[1.35rem]">
-              <img
-                src={profile.photoUrl}
-                alt={profile.photoAlt}
-                width={1280}
-                height={1920}
-                className="aspect-[4/5] w-full object-cover object-top"
-              />
-            </div>
-          </div>
-        </div>
+      </div>
+      <h1 className="mt-7 text-balance font-display text-[2.6rem] leading-[1.02] tracking-tight sm:text-6xl">
+        {profile.name}
+      </h1>
+      <p className="mt-4 max-w-[46ch] text-pretty text-[15px] leading-relaxed text-muted-foreground sm:text-base">
+        {profile.intro}
+      </p>
+      <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+        <a
+          href="#experience"
+          className="flex items-center justify-center rounded-xl bg-foreground px-5 py-3.5 text-sm font-semibold text-background transition-transform duration-200 hover:-translate-y-0.5"
+        >
+          View My Experience
+        </a>
+        <a
+          href={profile.cvUrl}
+          download
+          className="flex items-center justify-center rounded-xl border border-border bg-panel px-5 py-3.5 text-sm font-semibold text-foreground backdrop-blur-md transition-transform duration-200 hover:-translate-y-0.5"
+        >
+          Download CV
+        </a>
       </div>
     </section>
   );
